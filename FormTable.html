@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+
+    <h2>Formulario de Registro</h2>
+
+    <form action="" method="post">
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <td><label>Nombres:</label></td>
+                <td>
+                    <input type="text" name="nombre" 
+                    placeholder="Ingrese su nombre"
+                    pattern="[A-Za-z ]+" title="Solo letras" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Número de cédula:</label></td>
+                <td>
+                    <input type="text" name="cedula" 
+                    placeholder="Ingrese 10 números"
+                    maxlength="10"
+                    pattern="[0-9]{10}" title="Debe tener 10 números" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Fecha de nacimiento:</label></td>
+                <td>
+                    <input type="date" name="fecha" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Ciudad:</label></td>
+                <td>
+                    <input type="text" name="ciudad"
+                    pattern="[A-Za-z ]+" title="Solo letras" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Correo:</label></td>
+                <td>
+                    <input type="email" name="correo"
+                    placeholder="ejemplo@gmail.com" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Teléfono:</label></td>
+                <td>
+                    <input type="text" name="telefono"
+                    placeholder="Solo números"
+                    pattern="[0-9]+" title="Solo números" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Dirección:</label></td>
+                <td>
+                    <textarea name="direccion" cols="30" rows="3"
+                    placeholder="Ingrese su dirección" required></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Estado civil:</label></td>
+                <td>
+                    <select name="estado" required>
+                        <option value="">Seleccione...</option>
+                        <option>Soltero</option>
+                        <option>Casado</option>
+                        <option>Divorciado</option>
+                        <option>Viudo</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Etnia:</label></td>
+                <td>
+                    <select name="etnia" required>
+                        <option value="">Seleccione...</option>
+                        <option>Mestizo</option>
+                        <option>Indígena</option>
+                        <option>Afroecuatoriano</option>
+                        <option>Blanco</option>
+                        <option>Otro</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Género:</label></td>
+                <td>
+                    <input type="radio" name="genero" required> Masculino
+                    <input type="radio" name="genero"> Femenino
+                    <input type="radio" name="genero"> Otro
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Gustos personales:</label></td>
+                <td>
+                    <input type="checkbox" required> Deportes
+                    <input type="checkbox"> Música
+                    <input type="checkbox"> Lectura
+                    <input type="checkbox"> Tecnologías
+                    <input type="checkbox"> Otros
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
